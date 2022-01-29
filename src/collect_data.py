@@ -19,6 +19,7 @@ df2 = df2.iloc[-100:]
 
 df = df2.join(df['CLOSE'])
 
+
 with open('../data/RSI_close.txt', 'w') as f:
     for index, row in df.iterrows():
         close = row['CLOSE']
