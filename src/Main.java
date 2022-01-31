@@ -28,15 +28,6 @@ public class Main {
         executor1.shutdown();
         executor1.awaitTermination(60, TimeUnit.SECONDS);
 
-        // ExecutorService executor2 = Executors.newFixedThreadPool((n-n/2)*m);
-        // for (int i = n/2; i < n; i++) {
-        //     for (int j = 0; j < m; j++) {
-        //         executor2.execute(new Thread(new Worker(buyRSIs[i], sellRSIs[j], writer)));
-        //     }
-        // }
-        // executor2.shutdown();
-        // executor2.awaitTermination(60, TimeUnit.SECONDS);
-
         writer.closeWriter();
     }
 }
